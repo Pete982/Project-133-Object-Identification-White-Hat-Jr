@@ -1,0 +1,41 @@
+body{
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+#HeyoH1{
+    font-family: fantasy;
+    
+    padding: top; 
+
+    margin: 10px;
+
+    text-underline-position: under;
+
+    font-style: italic;
+   
+    font-weight: bold;
+
+    color: rgb(1, 255, 14);
+}
+
+.link{
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    width: 265;
+
+    margin-top: 15px;
+
+    font-size: large;
+}
+
+.link:hover{
+    font-size: large;
+
+
+}

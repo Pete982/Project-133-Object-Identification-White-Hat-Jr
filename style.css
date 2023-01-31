@@ -1,0 +1,58 @@
+body{
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+#HeyoH1{
+    font-family: fantasy;
+    
+    padding: top; 
+
+    margin: 10px;
+
+    text-underline-position: under;
+
+    font-style: italic;
+   
+    font-weight: bold;
+
+    color: red;
+}
+
+.link{
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    width: 265;
+
+    margin-top: 15px;
+
+    font-size: large;
+}
+
+.link:hover{
+    font-size: large;
+
+
+}
+
+#BackButton{
+   font-size: 25px;
+
+   font-family: fantasy;
+
+   padding: 10px;
+
+   margin: left;
+
+
+}
+
+#BackButton:hover{
+   box-shadow: 10, 10, 10, gray;
+
+}
