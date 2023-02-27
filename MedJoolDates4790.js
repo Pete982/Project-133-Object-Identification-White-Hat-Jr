@@ -1,18 +1,18 @@
-RedTrey_Image5= ""; //Used for MedJool Dates in This JS File.
+MedjoolDates_image4 = ""; //Used for The MedJool Dates in This JS File.
 
 
 Status1 = "";
 
 objects  = [];
 
-
 results = [];
+
 
 
 function preload(){
 
 
-RedTrey_Image5 = loadImage("IMG_4795.jpg");
+MedjoolDates_image4 = loadImage("IMG_4790.jpg");
 }
 
 function setup(){
@@ -22,7 +22,7 @@ function setup(){
 
     objectDetector = ml5.objectDetector('cocossd', moddelloaded);  //Object Detector is a object detecting variable. Pretty self explanatory huh lol.//
 
-    document.getElementById("Status1").innerHTML= "HI I'm status! I'ma detect your objects:"
+    document.getElementById("status").innerHTML= "HI I'm status! I'ma detect your objects:"
 
 }
 
@@ -31,7 +31,7 @@ function moddelloaded(){
 
    Status1 = true;
 
-  objectDetector.detect(RedTrey_Image5 , gotResults);
+  objectDetector.detect(MedjoolDates_image4, gotResults);
 
 }
 
@@ -47,24 +47,24 @@ function gotResults(error, results){
 }
 
 function draw(){
-    image(RedTrey_Image5, 0, 0, 640, 350)
+    image(MedjoolDates_image4, 0, 0, 640, 350)
     if( Status1 =! ""){
  
        for(i = 0; i < objects.length; i++){
  
-                 document.getElementById("Status1").innerHTML = "Status: Object Detected";
+                 document.getElementById("status").innerHTML = "Status: Object Detected";
  
                  fill("#FF0000");
  
                  percent = floor(objects[i].confidence*100);
  
-                 text(objects[i].label + " " + percent + "%", objects[i].x - 14 , objects[i].y - 175);
+                 text(objects[i].label + " " + percent + "%", objects[i].x - 800 , objects[i].y - 520);
  
                  noFill(); 
  
                  stroke("#FF0000");
  
-                 rect(objects[i].x - 14 , objects[i].y - 175, objects[i].width - 2,326 , objects[i].height - 2,850);
+                 rect(objects[i].x - 800 , objects[i].y - 520, objects[i].width - 910 , objects[i].height - 2,640);
  
                  
                }      

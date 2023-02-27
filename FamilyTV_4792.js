@@ -1,4 +1,4 @@
-RedTrey_Image5= ""; //Used for MedJool Dates in This JS File.
+FamilyTV_Image2 = ""; //Used for The Family TV in This JS File.
 
 
 Status1 = "";
@@ -9,10 +9,11 @@ objects  = [];
 results = [];
 
 
+
 function preload(){
 
 
-RedTrey_Image5 = loadImage("IMG_4795.jpg");
+FamilyTV_Image2 = loadImage("IMG_4792.jpg");
 }
 
 function setup(){
@@ -22,7 +23,7 @@ function setup(){
 
     objectDetector = ml5.objectDetector('cocossd', moddelloaded);  //Object Detector is a object detecting variable. Pretty self explanatory huh lol.//
 
-    document.getElementById("Status1").innerHTML= "HI I'm status! I'ma detect your objects:"
+    document.getElementById("status").innerHTML= "HI I'm status! I'ma detect your objects:"
 
 }
 
@@ -31,7 +32,7 @@ function moddelloaded(){
 
    Status1 = true;
 
-  objectDetector.detect(RedTrey_Image5 , gotResults);
+  objectDetector.detect( FamilyTV_Image2 , gotResults);
 
 }
 
@@ -47,7 +48,7 @@ function gotResults(error, results){
 }
 
 function draw(){
-    image(RedTrey_Image5, 0, 0, 640, 350)
+    image(FamilyTV_Image2 , 0, 0, 640, 350)
     if( Status1 =! ""){
  
        for(i = 0; i < objects.length; i++){

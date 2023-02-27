@@ -4,7 +4,7 @@ Status1 = "";
 
 objects  = [];
 
-gotResults_array = [];
+results = [];
 
 function preload(){
     loadImage("IMG_4790.jpg");

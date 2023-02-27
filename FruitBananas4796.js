@@ -1,18 +1,20 @@
-RedTrey_Image5= ""; //Used for MedJool Dates in This JS File.
+Bananas_Image3 = ""; //Used for The Bananas in This JS File.
 
 
 Status1 = "";
 
 objects  = [];
 
-
 results = [];
+
 
 
 function preload(){
 
 
-RedTrey_Image5 = loadImage("IMG_4795.jpg");
+Bananas_Image3 = loadImage("IMG_4796.jpg");
+
+
 }
 
 function setup(){
@@ -31,7 +33,7 @@ function moddelloaded(){
 
    Status1 = true;
 
-  objectDetector.detect(RedTrey_Image5 , gotResults);
+  objectDetector.detect(Bananas_Image3 , gotResults);
 
 }
 
@@ -47,7 +49,7 @@ function gotResults(error, results){
 }
 
 function draw(){
-    image(RedTrey_Image5, 0, 0, 640, 350)
+    image( Bananas_Image3 , 0, 0, 640, 350)
     if( Status1 =! ""){
  
        for(i = 0; i < objects.length; i++){

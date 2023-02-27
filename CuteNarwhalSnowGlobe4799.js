@@ -1,4 +1,4 @@
-RedTrey_Image5= ""; //Used for MedJool Dates in This JS File.
+SnowGlobe_Image1 = ""; //Used for Revolving Chair in This JS File.
 
 
 Status1 = "";
@@ -12,7 +12,7 @@ results = [];
 function preload(){
 
 
-RedTrey_Image5 = loadImage("IMG_4795.jpg");
+SnowGlobe_Image1 = loadImage("IMG_4799.jpg");
 }
 
 function setup(){
@@ -31,7 +31,7 @@ function moddelloaded(){
 
    Status1 = true;
 
-  objectDetector.detect(RedTrey_Image5 , gotResults);
+  objectDetector.detect(SnowGlobe_Image1, gotResults);
 
 }
 
@@ -47,7 +47,7 @@ function gotResults(error, results){
 }
 
 function draw(){
-    image(RedTrey_Image5, 0, 0, 640, 350)
+    image(SnowGlobe_Image1, 0, 0, 640, 350)
     if( Status1 =! ""){
  
        for(i = 0; i < objects.length; i++){
